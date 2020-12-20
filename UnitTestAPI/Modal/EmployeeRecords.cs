@@ -13,12 +13,14 @@ namespace UnitTestAPI.Modal
 		private readonly IServiceProvider _provider;
 		public EmployeeRecords(IServiceProvider serviceProvider)
 		{
-			_provider = serviceProvider;
-			using (IServiceScope scope = _provider.CreateScope())
+			   _provider = serviceProvider;
+			IServiceScope scope = _provider.CreateScope();
 				_context = scope.ServiceProvider.GetRequiredService<DBContext>();
 		}
+
 		public void AddEmployee(Employee emp)
 		{
+
 			_context.Add(emp);
 			_context.SaveChanges();
 		}
@@ -42,6 +44,11 @@ namespace UnitTestAPI.Modal
 		{
 			long EId = long.Parse(EmployeeId);
 			return _context.Employees.Where(x => x.EmployeeId == EId).FirstOrDefault();
+		}
+
+		public void updateEmployee(Employee employee)
+		{
+			var CurrentEmployee = _context.Employees.Where(x => x.EmployeeId == employee.EmployeeId); 
 		}
 	}
 }

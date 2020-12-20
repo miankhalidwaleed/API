@@ -8085,11 +8085,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learning\\Core\\XUnitTestAPI\\XUnitTestAPI.csproj",
+      "projectUniqueName": "D:\\Learning\\API\\XUnitTestAPI\\XUnitTestAPI.csproj",
       "projectName": "XUnitTestAPI",
-      "projectPath": "D:\\Learning\\Core\\XUnitTestAPI\\XUnitTestAPI.csproj",
+      "projectPath": "D:\\Learning\\API\\XUnitTestAPI\\XUnitTestAPI.csproj",
       "packagesPath": "C:\\Users\\miank\\.nuget\\packages\\",
-      "outputPath": "D:\\Learning\\Core\\XUnitTestAPI\\obj\\",
+      "outputPath": "D:\\Learning\\API\\XUnitTestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8107,9 +8107,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Learning\\Core\\UnitTestAPI\\UnitTestAPI.csproj": {
-              "projectPath": "D:\\Learning\\Core\\UnitTestAPI\\UnitTestAPI.csproj"
+            "D:\\Learning\\API\\UnitTestAPI\\UnitTestAPI.csproj": {
+              "projectPath": "D:\\Learning\\API\\UnitTestAPI\\UnitTestAPI.csproj"
             }
           }
         }
@@ -8122,6 +8123,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -8162,7 +8164,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

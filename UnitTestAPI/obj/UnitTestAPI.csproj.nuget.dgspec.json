@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Learning\\Core\\UnitTestAPI\\UnitTestAPI.csproj": {}
+    "D:\\Learning\\API\\UnitTestAPI\\UnitTestAPI.csproj": {}
   },
   "projects": {
-    "D:\\Learning\\Core\\UnitTestAPI\\UnitTestAPI.csproj": {
+    "D:\\Learning\\API\\UnitTestAPI\\UnitTestAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Learning\\Core\\UnitTestAPI\\UnitTestAPI.csproj",
+        "projectUniqueName": "D:\\Learning\\API\\UnitTestAPI\\UnitTestAPI.csproj",
         "projectName": "UnitTestAPI",
-        "projectPath": "D:\\Learning\\Core\\UnitTestAPI\\UnitTestAPI.csproj",
+        "projectPath": "D:\\Learning\\API\\UnitTestAPI\\UnitTestAPI.csproj",
         "packagesPath": "C:\\Users\\miank\\.nuget\\packages\\",
-        "outputPath": "D:\\Learning\\Core\\UnitTestAPI\\obj\\",
+        "outputPath": "D:\\Learning\\API\\UnitTestAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -29,6 +29,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -78,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

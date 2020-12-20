@@ -41,24 +41,41 @@ namespace UnitTestAPI.Controllers
 			return Ok();
 
 		}
-		//[Route("AddEmployee")]
-		//[HttpPost]
-		//public IActionResult AddEmployee(Employee employee)
-		//{
-		//	try
-		//	{
+		[Route("AddEmployee")]
+		[HttpPost]
+		//[ServiceFilter(typeof(ClientIpCheckActionFilter))]
+		public IActionResult AddEmployee(Employee employee)
+		{
+			try
+			{
 
 
-		//		_context.Employees.Add(employee);
-		//		_context.SaveChanges();
-		//		return Ok();
-		//	}
-		//	catch (Exception ex)
-		//	{
-		//		return StatusCode(400, ex.Message);
-		//	}
-			
-		//}
+				empRecords.AddEmployee(employee);
+				return StatusCode(200, "Employee Added");
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(400, ex.Message);
+			}
+
+		}
+		[HttpPut]
+		[Route("AddEmployee")]
+		public IActionResult updateEmployee(Employee employee)
+		{
+			try
+			{
+
+
+				empRecords.AddEmployee(employee);
+				return StatusCode(200, "Employee Added");
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(400, ex.Message);
+			}
+
+		}
 		private int getSum(int a , int b)
 		{
 			return a + b;

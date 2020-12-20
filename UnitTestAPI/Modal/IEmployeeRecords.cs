@@ -11,5 +11,6 @@ namespace UnitTestAPI.Modal
 		void AddEmployee(Employee emp);
 		IList<Employee> getAllEmployee();
 		Employee getAllEmployeeById(string EmployeeId);
+		void updateEmployee(Employee employee);
 	}
 }

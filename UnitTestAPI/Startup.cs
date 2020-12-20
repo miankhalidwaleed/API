@@ -27,8 +27,18 @@ namespace UnitTestAPI
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+
 			services.AddDbContext<DBContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:EmployeeDB"]));
 
+			services.AddScoped<ClientIpCheckActionFilter>(container =>
+			{
+				var loggerFactory = container.GetRequiredService<ILoggerFactory>();
+				var logger = loggerFactory.CreateLogger<ClientIpCheckActionFilter>();
+
+				return new ClientIpCheckActionFilter(
+					Configuration["AdminSafeList"]);
+			});
+			services.AddScoped<IEmployeeRecords, EmployeeRecords>();
 			services.AddControllers();
 		}
 
